@@ -22,9 +22,9 @@ class movie{
     /**
      * Genere
      *
-     * @var string
+     * @var array
      */
-    public $Genere;    
+    public $Genere = [];    
     /**
      * AnnoDiProduzione
      *
@@ -71,14 +71,14 @@ class movie{
 }
 
 //primo film
-$Matrix= new movie("matrix",120,"fantasia",1985);
+$Matrix= new movie("matrix",120,["azione","fantastico","splatter"],1999);
 $Dune=new movie("Dune",240,"fantasia", 2024);
 
 // echo $Matrix->$StatoFilm;
 
 $Films=[$Matrix,$Dune];
 
-var_dump($Dune->StatoFilm)
+var_dump($Matrix->Genere)
 
 ?>
 
